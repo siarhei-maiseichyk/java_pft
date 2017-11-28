@@ -19,4 +19,14 @@ public class Point {
     public double distance(double x, double y) {
         return Math.sqrt(Math.pow((this.x - x), 2) + Math.pow((this.y - y), 2));
     }
+
+    /**
+     * Returns distance between two points
+     *
+     * @param secondPoint object of class Point
+     * @return distance value in double
+     */
+    public double distance(Point secondPoint){
+        return Math.sqrt(Math.pow((this.x - secondPoint.x), 2) + Math.pow((this.y - secondPoint.y), 2));
+    }
 }

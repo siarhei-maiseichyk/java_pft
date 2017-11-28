@@ -11,6 +11,9 @@ public class DistanceCalculator {
         System.out.println(" - метод класса DistanceCalculator = " + String.format("%.3f", distance(point1, point2)));
         System.out.println(" - метод класса Point = " + String.format("%.3f", point1.distance(3, 4)));
         System.out.println(" - метод класса Point (еще один вариант) = " + String.format("%.3f", point1.distance(point2.x, point2.y)));
+
+        //Добавлен еще один метод distance в класс Point, который использует в качестве параметра объект класса Point
+        System.out.println(" - метод класса Point (метод distance(Point secondPoint)) = " + String.format("%.3f", point1.distance(point2)));
     }
 
     public static double distance(Point point1, Point point2) {
